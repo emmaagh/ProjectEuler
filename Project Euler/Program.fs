@@ -2,8 +2,7 @@
 
 [<EntryPoint>]
 let main argv = 
-    let result = Problem14_LongestCollatzSequence.result 120000
+    let result = Problem7_10001stPrime.prime ()
     printfn "%A" result
-//    printfn "%A" (result * 100.0)
     let x = System.Console.ReadKey()
     0

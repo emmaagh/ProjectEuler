@@ -1,16 +1,18 @@
 ﻿namespace ProjectEuler.Problems
 
-type Problem7() =
+module Problem7_10001stPrime =
     
-    let rec sieve ns =
+    let rec private sieve ns =
         match ns with
         | (m::ms)    -> m :: sieve (List.filter (fun n -> n%m <> 0) ms)
         | []        -> []
 
-    let flip f x y = f y x
+    let private flip f x y = f y x
 
-    member this.Execute() =
-        [1 .. 98000]
+    let prime () =
+        [2 .. 110000]
         |> sieve
-        |> List.length
+        |> List.toSeq
+        |> Seq.take 10001
+        |> Seq.last
 //        |> (flip List.nth) 10000

@@ -1,6 +1,6 @@
 ﻿namespace ProjectEuler.Problems
 
-type Problem6() =
+type Problem6_SumSquareDifference() =
 
     let source = [1 .. 100]
 

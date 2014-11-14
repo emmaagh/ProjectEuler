@@ -2,7 +2,7 @@
 
 open System;
 
-type Problem4() =
+type Problem4_LargestPalindromeProduct() =
 
     let equalEnds (s:char[]) = s.[0].Equals(s.[s.Length-1])
 

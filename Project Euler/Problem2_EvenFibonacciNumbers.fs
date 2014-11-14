@@ -1,6 +1,6 @@
 ﻿namespace ProjectEuler.Problems
 
-type Problem2() =
+type Problem2EvenFibonacciNumbers() =
 
     let sum xs filter bound = Seq.sum <| Seq.takeWhile (fun n -> n < bound) (Seq.filter filter xs)
 

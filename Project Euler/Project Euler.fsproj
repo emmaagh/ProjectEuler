@@ -46,12 +46,12 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Problem2.fs" />
-    <Compile Include="Problem4.fs" />
-    <Compile Include="Problem6.fs" />
-    <Compile Include="Problem7.fs" />
-    <Compile Include="Problem8.fs" />
-    <Compile Include="Problem9.fs" />
+    <Compile Include="Problem2_EvenFibonacciNumbers.fs" />
+    <Compile Include="Problem4_LargestPalindromeProduct.fs" />
+    <Compile Include="Problem6_SumSquareDifference.fs" />
+    <Compile Include="Problem7_10001stPrime.fs" />
+    <Compile Include="Problem8_LargestProductInSeries.fs" />
+    <Compile Include="Problem9_SpecialPythagoreanTriplet.fs" />
     <Compile Include="Problem14_LongestCollatzSequence.fs" />
     <Compile Include="Problem19_CountingSundays.fs" />
     <Compile Include="Problem31_CoinsSums.fs" />

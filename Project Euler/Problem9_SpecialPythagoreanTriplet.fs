@@ -1,6 +1,6 @@
 ﻿namespace ProjectEuler.Problems
 
-type Problem9() =
+type Problem9_SpecialPythagoreanTriplet() =
 
     let testTriplet a b c = a*a + b*b = c*c && a+b+c = 1000
 
