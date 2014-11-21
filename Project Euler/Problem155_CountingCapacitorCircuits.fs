@@ -1,4 +1,4 @@
-﻿module Problem155_CountingCapacitorCircuits_V2
+﻿module Problem155_CountingCapacitorCircuits
 
     open NumberTheory
     
