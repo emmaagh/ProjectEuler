@@ -1,6 +1,4 @@
-﻿namespace ProjectEuler.Problems
-
-module Problem7_10001stPrime =
+﻿module Problem7_10001stPrime
     
     let rec private sieve ns =
         match ns with

@@ -1,8 +1,4 @@
-﻿namespace ProjectEuler.Problems
-
-open Microsoft.FSharp.Collections
-
-module Problem14_LongestCollatzSequence =
+﻿module Problem14_LongestCollatzSequence
 //
 //    let rec private bar input acc =
 //        match input with

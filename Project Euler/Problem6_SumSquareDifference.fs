@@ -1,9 +1,7 @@
-﻿namespace ProjectEuler.Problems
+﻿module Problem6_SumSquareDifference
 
-type Problem6_SumSquareDifference() =
+    let private source = [1 .. 100]
 
-    let source = [1 .. 100]
+    let private square n = n * n
 
-    let square n = n * n
-
-    member this.Execute() = (square (Seq.sum source)) - (Seq.sum (Seq.map square source))
+    let execute () = (square (Seq.sum source)) - (Seq.sum (Seq.map square source))

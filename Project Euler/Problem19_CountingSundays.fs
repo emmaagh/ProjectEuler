@@ -1,6 +1,4 @@
-﻿namespace ProjectEuler.Problems
-
-module Problem19_CountingSundays =
+﻿module Problem19_CountingSundays
 
     let isLeapYear year =
         match year % 400, year % 100, year % 4 with

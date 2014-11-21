@@ -1,8 +1,4 @@
-﻿namespace ProjectEuler.Problems
-
-open System
-
-module Problem112_BouncyNumbers =
+﻿module Problem112_BouncyNumbers
     
     let private inclusiveMinToInclusiveMax min max =
         if max - min + 1 > 0 then

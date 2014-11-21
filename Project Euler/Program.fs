@@ -1,8 +1,8 @@
-﻿open ProjectEuler.Problems
-
-[<EntryPoint>]
+﻿[<EntryPoint>]
 let main argv = 
-    let result = Problem7_10001stPrime.prime ()
-    printfn "%A" result
-    let x = System.Console.ReadKey()
+    printfn "%A" <| Problem155_CountingCapacitorCircuits_V2.result 1
+    printfn "%A" <| Problem155_CountingCapacitorCircuits_V2.result 2
+    printfn "%A" <| Problem155_CountingCapacitorCircuits_V2.result 3
+    printfn "%A" <| Problem155_CountingCapacitorCircuits_V2.result 18
+    let x = System.Console.ReadLine()
     0

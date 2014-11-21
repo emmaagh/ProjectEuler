@@ -46,6 +46,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NumberTheory.fs" />
     <Compile Include="Problem2_EvenFibonacciNumbers.fs" />
     <Compile Include="Problem4_LargestPalindromeProduct.fs" />
     <Compile Include="Problem6_SumSquareDifference.fs" />

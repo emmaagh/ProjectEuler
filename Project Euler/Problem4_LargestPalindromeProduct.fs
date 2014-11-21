@@ -1,28 +1,24 @@
-﻿namespace ProjectEuler.Problems
+﻿module Problem4_LargestPalindromeProduct
 
-open System;
+    let private equalEnds (s:char[]) = s.[0].Equals(s.[s.Length-1])
 
-type Problem4_LargestPalindromeProduct() =
+    let private snipEnds (s:char[]) = s.[1 .. s.Length-2]
 
-    let equalEnds (s:char[]) = s.[0].Equals(s.[s.Length-1])
-
-    let snipEnds (s:char[]) = s.[1 .. s.Length-2]
-
-    let rec isPalindrome (s:char[]) =
+    let rec private isPalindrome (s:char[]) =
         match s.Length with
         | 0 | 1     -> true
         | otherwise -> equalEnds s && isPalindrome <| snipEnds s
 
-    let isPalindrome n = isPalindrome(n.ToString().ToCharArray())
+    let private isPalindrome' n = isPalindrome(n.ToString().ToCharArray())
 
-    let cartesianProduct ns = seq { for n in ns do for m in ns -> (n, m) }
+    let private cartesianProduct ns = seq { for n in ns do for m in ns -> (n, m) }
 
-    let products ns = 
+    let private products ns = 
         cartesianProduct ns
         |> Seq.filter (fun (n, m) -> n <= m)
         |> Seq.map (fun (n, m) -> n*m)
 
-    member this.Execute() =
+    let execute () =
         products [1000 .. 9999]
-        |> Seq.filter isPalindrome
+        |> Seq.filter isPalindrome'
         |> Seq.max
